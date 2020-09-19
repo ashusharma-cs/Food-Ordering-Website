@@ -1,0 +1,40 @@
+/* navigation */
+.navbar{
+    flex-direction: column;
+}
+.navbar ul li a{
+    padding: 0px 5px;
+    font-size: 10px;
+}
+.navbar ul{
+    margin: 15px;
+}
+
+
+
+/* section-home */
+#home{
+    height: 300px;
+    
+}
+#home::before{
+    height: 520px;
+}
+
+/* section-service */
+.service-box{
+    flex-direction: column;
+}
+
+
+/* section-client */
+.client-box{
+    flex-wrap: wrap;
+}
+
+/* section-form */
+.contact-box form{
+    width: 50%;
+}
+
+/* utility-classes */

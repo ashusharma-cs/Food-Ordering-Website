@@ -1,0 +1,233 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.navbar::before{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    
+}
+.navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+.navbar ul li a:hover{
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+}
+.navbar ul li{
+    font-size: 20px;
+    list-style: none;
+    margin: 12px;
+}
+/* logo */
+.navbar .logo{
+    
+    margin: 12px;
+    padding: 5px;
+}
+.navbar .logo img{
+    width: 70px;
+    height: 70px;
+}
+
+/* section-home */
+
+#home::before{
+    content: "";
+    background: url('../images/pexels-ella-olsson-1640777.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 633px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    height: 500px;
+    
+}
+#home h1,
+#home p{
+    text-align: center;
+}
+#home h1{
+    margin: 12px 12px;
+}
+
+#home .btn{
+    border-radius: 20px;
+    font-size: 15px;
+    border: 2px solid grey;
+    padding: 12px;
+    margin-top: 12px;
+    
+    
+
+
+}
+#home .btn:hover{
+    
+    cursor: pointer;
+    background-color: darkgray;
+    border: 2px solid white;
+
+}
+
+/* section-service */
+
+#service{
+    margin-top: 20px;
+}
+.service-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sbox img{
+    width: 230px;
+    height: 200px;
+    display: block;
+    margin: auto;
+
+}
+.sbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    border-radius: 25px;
+    /* width: 350px;
+    height: 500px; */
+    margin: 20px;
+    background-color: rgb(243, 235, 235);
+    
+}
+.sbox p{
+    text-align: center;
+    margin: 17px;
+}
+
+/* section-client */
+
+#client::before{
+    content: "";
+    background: url('../images/pexels-donald-tong-2205270.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+#client{
+    margin-top: 20px;
+    position: relative;
+    /* border: 2px solid red; */
+    
+    
+}
+#client h1{
+    padding: 18px;
+}
+.client-box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 12px;
+    
+}
+.client-box img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+/* section-contact */
+
+#form::before{
+    content: "";
+    background: url('../images/contact.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 603px;
+    position: absolute;
+    
+    z-index: -1;
+    opacity: 0.8;
+}
+#form{
+    
+    margin-top: 12px;
+}
+#form h1{
+    padding: 12px;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    outline: none;
+}
+.contact-box label{
+    font-size: 20px;
+}
+.contact-box form{
+    padding: 12px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 35px;
+}
+.center{
+    text-align: center;
+}
